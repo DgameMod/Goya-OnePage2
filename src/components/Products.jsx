@@ -41,11 +41,12 @@ function Products() {
             transition={{ delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <img
-              src={producto.imagen}
-              alt={producto.nombre}
-              className="w-full h-48 object-cover"
-            />
+           <img
+            src={producto.imagen}
+            alt={producto.nombre}
+            className="w-full max-h-72 object-contain mx-auto"
+          />
+
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">{producto.nombre}</h3>
               <p className="text-sm">{producto.descripcion}</p>
