@@ -58,9 +58,9 @@ function Products() {
 
       <div className="text-center mt-12">
         <a
-          href="/catalogo-goya.pdf"
-          target="_blank"
-          className="inline-block bg-blue-800 text-white px-6 py-3 rounded-full text-sm font-semibold shadow hover:bg-blue-900 transition"
+         href="/catalogo-goya.pdf"
+         target="_blank"
+         className="inline-flex items-center gap-2 bg-blue-800 text-white px-6 py-3 rounded-full text-sm font-semibold shadow hover:bg-blue-900 transition"
         >
           Ver Catálogo Completo
         </a>
