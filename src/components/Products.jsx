@@ -12,7 +12,7 @@ function Products() {
       nombre: "Rodillos Antigota",
       descripcion:
         "Sistema antigoteo, con hilo hidrofílico, mango ergonómico y extremos biselados para mejor aplicación.",
-      imagen: "/rodillo.jpg",
+      imagen: "/rodillo.png",
     },
     {
       nombre: "Espátulas Profesionales",
