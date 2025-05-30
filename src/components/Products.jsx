@@ -34,17 +34,18 @@ function Products() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {productos.map((producto, index) => (
           <motion.div
-            key={index}
-            className="bg-blue-50 rounded-xl shadow-md overflow-hidden"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2 }}
-            viewport={{ once: true }}
+              key={index}
+              className="bg-blue-50 rounded-xl shadow-md overflow-hidden"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              whileHover={{ y: -5, boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)" }}
+              viewport={{ once: true }}
           >
            <img
             src={producto.imagen}
             alt={producto.nombre}
-            className="w-full max-h-72 object-contain mx-auto"
+            className="w-full max-h-72 object-contain mx-auto rounded-t-xl"
           />
 
             <div className="p-6">
