@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <About />
       <Products />
       <Contact />
-
+      <Footer />
       <a
   href="https://wa.me/50250362856"
   target="_blank"
