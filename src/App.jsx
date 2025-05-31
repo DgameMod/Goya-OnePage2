@@ -5,6 +5,7 @@ import Products from "./components/Products";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
+import ProductSlider from "./components/ProductSlider";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Products />
       <Gallery />
+      <ProductSlider />
       <Contact />
       <Footer />
       <a
