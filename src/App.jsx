@@ -4,6 +4,7 @@ import About from "./components/About";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Products />
+      <Gallery />
       <Contact />
       <Footer />
       <a
