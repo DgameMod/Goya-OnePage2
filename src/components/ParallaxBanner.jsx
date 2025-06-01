@@ -27,10 +27,10 @@ function ParallaxBanner() {
       <div className="relative z-10 flex items-center justify-center h-full bg-black/40 text-white text-center px-6">
         <div>
           <img
-            src="/logo-goya.png"
-            alt="Logo Goya"
-            className="w-32 md:w-40 mx-auto mb-4"
-          />
+          src="/logo-goya.png"
+          alt="Logo Goya"
+          className="w-32 md:w-40 mx-auto mb-4 brightness-0 invert"
+        />
           <h2 className="text-3xl md:text-5xl font-bold mb-2">
             Calidad que transforma
           </h2>
