@@ -1,35 +1,87 @@
-import './index.css';
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Products from "./components/Products";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-import ProductSlider from "./components/ProductSlider";
 import ParallaxBanner from "./components/ParallaxBanner";
+import ProductSlider from "./components/ProductSlider";
 import ParallaxBanner2 from "./components/ParallaxBanner2";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans bg-white text-gray-900">
       <Hero />
       <About />
-      <Products />
       <Gallery />
       <ParallaxBanner />
       <ProductSlider />
-      <Contact />
-      <Footer />
       <ParallaxBanner2 />
-      <a
-  href="https://wa.me/50250362856"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg p-4 z-50"
->
-  💬
-</a>
 
+      {/* Sección de contacto */}
+      <section id="contacto" className="bg-white py-16 px-4">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-blue-900 mb-4">Contáctanos</h2>
+          <p className="text-gray-600 mb-6">
+            ¿Deseas una cotización o más información? Escríbenos con gusto te ayudamos.
+          </p>
+
+          {/* Botón directo a WhatsApp */}
+          <a
+            href="https://wa.me/50250362856"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-blue-800 transition duration-300"
+          >
+            Escribir por WhatsApp
+          </a>
+
+          <div className="my-8 border-t border-gray-300"></div>
+
+          {/* Formulario de contacto */}
+          <form className="space-y-4 text-left">
+            <div>
+              <label htmlFor="nombre" className="block text-sm font-medium text-gray-700">
+                Nombre
+              </label>
+              <input
+                type="text"
+                id="nombre"
+                className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="correo" className="block text-sm font-medium text-gray-700">
+                Correo electrónico
+              </label>
+              <input
+                type="email"
+                id="correo"
+                className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700">
+                Mensaje
+              </label>
+              <textarea
+                id="mensaje"
+                rows="4"
+                className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition"
+            >
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }
