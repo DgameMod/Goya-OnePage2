@@ -4,11 +4,12 @@ function Hero() {
   return (
     <section className="bg-white text-center py-20 px-4" id="hero">
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="max-w-3xl mx-auto"
-      >
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      whileInView={{ scale: [1, 1.05, 1] }}
+      viewport={{ once: true }}
+    >
         <img
           src="/logo-goya.png"
           alt="Logo Goya"
