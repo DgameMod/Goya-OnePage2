@@ -52,10 +52,10 @@ function App() {
               value="Gracias por contactarnos. Te responderemos pronto."
             />
             <input
-              type="hidden"
-              name="_next"
-              value="https://tusitio.com/gracias"
-            />
+            type="hidden"
+            name="_next"
+            value="https://tusitio.vercel.app/gracias"
+          />
 
             {/* Campo: Nombre */}
             <div>
