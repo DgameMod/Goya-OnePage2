@@ -13,7 +13,7 @@ function ParallaxBanner2() {
   return (
     <section
       ref={ref}
-      className="relative h-[60vh] overflow-hidden bg-white" // Eliminado my-16
+      className="relative h-[60vh] overflow-hidden bg-white"
     >
       {/* Fondo parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
