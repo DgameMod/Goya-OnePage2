@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import ProductSlider from "./components/ProductSlider";
+import ParallaxBanner from "./components/ParallaxBanner";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Products />
       <Gallery />
+      <ParallaxBanner />
       <ProductSlider />
       <Contact />
       <Footer />
