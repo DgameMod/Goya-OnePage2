@@ -31,17 +31,15 @@ function About() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {cards.map((card, index) => (
-          <motion.div
-            key={index}
-            className="bg-blue-50 rounded-xl shadow-lg p-6 text-left"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-semibold mb-3">{card.title}</h3>
-            <p className="text-sm leading-relaxed">{card.text}</p>
-          </motion.div>
+                  <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          {/* todo el contenido aquí */}
+        </motion.div>
+
         ))}
       </div>
     </section>
