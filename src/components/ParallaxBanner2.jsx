@@ -1,22 +1,43 @@
-// ParallaxBanner2.jsx
-import React from "react";
 
-export default function ParallaxBanner2() {
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
+function ParallaxBanner2() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
+
   return (
-    <section id="cotiza2">
-      <div
-        className="relative h-[400px] bg-fixed bg-center bg-cover flex flex-col items-center justify-center text-white text-center px-4"
-        style={{ backgroundImage: "url('/parallax-brochas-banner.jpg')" }}
-      >
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">Hecho para profesionales</h2>
-        <p className="text-lg md:text-xl mb-6">GOYA, tu herramienta de confianza</p>
-        <a
-          href="#contacto"
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300"
-        >
-          Cotiza ahora
-        </a>
+    <section
+      ref={ref}
+      className="relative h-[60vh] overflow-hidden bg-white" // Eliminado my-16
+    >
+      {/* Fondo parallax */}
+      <motion.div style={{ y }} className="absolute inset-0 z-0">
+        <img
+          src="/parallax-brochas-banner.png"
+          alt="Fondo brochas GOYA"
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+
+      {/* Contenido + capa oscura */}
+      <div className="relative z-10 flex items-center justify-center h-full bg-black/40 text-white text-center px-6">
+        <div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-2">
+            Hecho para profesionales
+          </h2>
+          <p className="text-md md:text-lg">
+            GOYA, tu herramienta de confianza
+          </p>
+        </div>
       </div>
     </section>
   );
 }
+
+export default ParallaxBanner2;
+
