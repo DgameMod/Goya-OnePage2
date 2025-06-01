@@ -32,7 +32,7 @@ function ProductSlider() {
             key={index}
             src={imagenes[index]}
             alt={`slider ${index + 1}`}
-            className="w-full h-64 object-cover"
+            className="w-full max-h-96 object-contain bg-white"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
