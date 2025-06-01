@@ -17,7 +17,7 @@ function ParallaxBanner2() {
       {/* Fondo parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <img
-          src="/parallax-brochas-banner.jpg"
+          src="/parallax-brochas-banner.png"
           alt="Fondo brochas GOYA"
           className="w-full h-full object-cover"
         />
