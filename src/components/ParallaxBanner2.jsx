@@ -11,9 +11,10 @@ function ParallaxBanner2() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
 
   return (
-    <section
+       <section
       ref={ref}
       className="relative h-[60vh] overflow-hidden bg-white"
+      style={{ marginBottom: 0 }}
     >
       {/* Fondo parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
