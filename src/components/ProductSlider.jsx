@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const imagenes = [
-  "/slider1.jpg",
-  "/slider2.jpg",
-  "/slider3.jpg",
-  "/slider4.jpg",
+  "/slider1.png",
+  "/slider2.png",
+  "/slider3.png",
+  "/slider4.png",
 ];
 
 function ProductSlider() {
