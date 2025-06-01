@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import ProductSlider from "./components/ProductSlider";
 import ParallaxBanner from "./components/ParallaxBanner";
+import ParallaxBanner2 from "./components/ParallaxBanner2";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ProductSlider />
       <Contact />
       <Footer />
+      <ParallaxBanner2 />
       <a
   href="https://wa.me/50250362856"
   target="_blank"
