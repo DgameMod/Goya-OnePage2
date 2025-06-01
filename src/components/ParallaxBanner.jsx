@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-function ParallaxBanner() {
+function ParallaxBanner2() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -14,34 +14,32 @@ function ParallaxBanner() {
       ref={ref}
       className="relative h-[60vh] overflow-hidden my-16 bg-white"
     >
-      {/* Fondo parallax */}
+      {/* Fondo con parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <img
-          src="/parallax-bg.png"
-          alt="Calidad GOYA"
+          src="/parallax-brochas-banner.jpg"
+          alt="Brochas GOYA fondo"
           className="w-full h-full object-cover"
         />
       </motion.div>
 
-      {/* Capa oscura y contenido */}
-      <div className="relative z-10 flex items-center justify-center h-full bg-black/40 text-white text-center px-6">
-        <div>
-          <img
-            src="/logo-goya.png"
-            alt="Logo Goya"
-            className="w-32 md:w-40 mx-auto mb-4 brightness-0 invert"
-          />
-          <h2 className="text-3xl md:text-5xl font-bold mb-2">
-            Calidad que transforma
-          </h2>
-          <p className="text-md md:text-lg">
-            Brochas, rodillos y herramientas profesionales
-          </p>
-        </div>
+      {/* Contenido central */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-white text-center px-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2">
+          Hecho para profesionales
+        </h2>
+        <p className="text-md md:text-lg">GOYA, tu herramienta de confianza</p>
+
+        {/* Botón CTA */}
+        <a
+          href="#contacto"
+          className="inline-block mt-6 px-6 py-3 bg-blue-700 text-white rounded-full font-semibold shadow-lg hover:bg-white hover:text-blue-800 transition-colors duration-300"
+        >
+          Cotiza ahora
+        </a>
       </div>
     </section>
   );
 }
 
-export default ParallaxBanner;
-
+export default ParallaxBanner2;
