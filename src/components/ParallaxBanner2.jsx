@@ -11,9 +11,9 @@ function ParallaxBanner2() {
 
   return (
     <section
-      ref={ref}
-      className="relative h-[500px] overflow-hidden bg-[#0e1b4d]" // Fuerza fondo sólido por si la imagen no cubre
-    >
+  ref={ref}
+  className="relative h-[500px] overflow-hidden bg-transparent"
+>
       {/* Fondo parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <img
