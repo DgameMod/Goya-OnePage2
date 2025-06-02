@@ -12,7 +12,7 @@ function ParallaxBanner2() {
   return (
     <section
       ref={ref}
-      className="relative h-[60vh] overflow-hidden mb-0"
+      className="relative h-[60vh] overflow-hidden p-0 m-0"
     >
       {/* Fondo parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
