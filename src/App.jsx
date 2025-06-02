@@ -7,6 +7,7 @@ import ParallaxBanner2 from "./components/ParallaxBanner2";
 import ContactModal from "./components/ContactModal";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <div className="font-sans bg-white text-gray-900">
