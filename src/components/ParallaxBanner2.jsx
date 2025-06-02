@@ -10,35 +10,32 @@ function ParallaxBanner2() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
 
   return (
-  <section
-  ref={ref}
-  className="relative overflow-hidden bg-white mb-0"
-  style={{ height: "auto" }}
->
-  {/* Fondo parallax */}
-  <motion.div style={{ y }} className="absolute inset-0 z-0">
-    <img
-      src="/parallax-brochas-banner.png"
-      alt="Fondo brochas GOYA"
-      className="w-full object-cover"
-      style={{ minHeight: "500px" }}
-    />
-  </motion.div>
+    <section
+      ref={ref}
+      className="relative h-[500px] overflow-hidden"
+    >
+      {/* Imagen de fondo parallax */}
+      <motion.div style={{ y }} className="absolute inset-0 z-0">
+        <img
+          src="/parallax-brochas-banner.png"
+          alt="Fondo brochas GOYA"
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
 
-  {/* Contenido + capa oscura */}
-<div className="relative z-10 flex flex-col items-center justify-center min-h-[500px] bg-black/40 text-white text-center px-6">
-  <div className="drop-shadow-md">
-    <h2 className="text-3xl md:text-5xl font-bold mb-2">
-      Hecho para profesionales
-    </h2>
-    <p className="text-md md:text-lg">
-      GOYA, tu herramienta de confianza
-    </p>
-  </div>
-</div>
-</section>
+      {/* Contenido centrado con capa oscura */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-white text-center px-6">
+        <div className="drop-shadow-lg">
+          <h2 className="text-3xl md:text-5xl font-bold mb-2">
+            Hecho para profesionales
+          </h2>
+          <p className="text-md md:text-lg">
+            GOYA, tu herramienta de confianza
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
 
 export default ParallaxBanner2;
-
