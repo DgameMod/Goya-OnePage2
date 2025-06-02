@@ -12,15 +12,18 @@ function ParallaxBanner2() {
   return (
     <section
       ref={ref}
-      className="relative h-[60vh] overflow-hidden p-0 m-0"
+      className="relative overflow-hidden bg-white"
+      style={{ height: "auto", marginBottom: 0 }}
     >
+
       {/* Fondo parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
-        <img
-          src="/parallax-brochas-banner.png"
-          alt="Fondo brochas GOYA"
-          className="w-full h-full object-cover"
-        />
+       <img
+        src="/parallax-brochas-banner.png"
+        alt="Fondo brochas GOYA"
+        className="w-full object-cover"
+        style={{ minHeight: "400px" }}
+      />
       </motion.div>
 
       {/* Contenido + capa oscura */}
