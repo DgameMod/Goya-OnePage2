@@ -1,43 +1,48 @@
+
 import React from "react";
 
-const productos = [
+const products = [
   {
-    nombre: "Brocha GOYA Profesional",
-    imagen: "/slider1.png",
+    name: "Brocha GOYA Profesional",
+    image: "/slider1.png",
   },
   {
-    nombre: "Rodillo Antigota POLIMAX",
-    imagen: "/slider2.png",
+    name: "Rodillo Antigota POLIMAX",
+    image: "/slider2.png",
   },
   {
-    nombre: "Espátula drywall",
-    imagen: "slider3.png",
+    name: "Espátula drywall",
+    image: "/slider3.png",
   },
   {
-    nombre: "Guantes industriales",
-    imagen: "/slider4.png",
+    name: "Guantes industriales",
+    image: "/slider4.png",
   },
 ];
 
 export default function ProductSlider() {
   return (
-    <section className="bg-white py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-blue-900 mb-10">Nuestros productos estrella</h2>
+    <section className="py-16 px-4 bg-white border-t border-gray-200">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-blue-900 text-center mb-10">
+          Nuestros productos estrella
+        </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {productos.map((producto, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 rounded-lg overflow-hidden"
+              className="bg-white rounded-lg shadow-md overflow-hidden"
             >
               <img
-                src={producto.imagen}
-                alt={producto.nombre}
-                className="w-full h-48 object-cover"
+                src={product.image}
+                alt={product.name}
+                className="w-full h-48 object-contain mx-auto bg-white"
               />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-blue-800">{producto.nombre}</h3>
+              <div className="p-4 text-center">
+                <h3 className="text-md font-semibold text-blue-800">
+                  {product.name}
+                </h3>
               </div>
             </div>
           ))}
