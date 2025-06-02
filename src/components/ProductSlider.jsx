@@ -15,7 +15,7 @@ const products = [
     image: "/slider3.png",
   },
   {
-    title: "Guantes industriales",
+    title: "Brocha Profesional Goya",
     image: "/slider4.png",
   },
 ];
