@@ -12,10 +12,10 @@ function ParallaxBanner2() {
   return (
     <section
       ref={ref}
-      className="relative h-[500px] overflow-hidden" // SIN bg-white
+      className="relative h-[500px] overflow-hidden bg-[#0e1b4d]" // Fuerza fondo sólido por si la imagen no cubre
     >
       {/* Fondo parallax */}
-      <motion.div style={{ y }} className="absolute inset-0 z-0 h-full w-full">
+      <motion.div style={{ y }} className="absolute inset-0 z-0">
         <img
           src="/parallax-brochas-banner.png"
           alt="Fondo brochas GOYA"
