@@ -3,7 +3,7 @@ import React from "react";
 
 const products = [
   {
-    title: "Brocha GOYA Profesional",
+    title: "Llana Acero Inoxidable",
     image: "/slider1.png",
   },
   {
