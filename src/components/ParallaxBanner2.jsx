@@ -11,21 +11,21 @@ function ParallaxBanner2() {
 
   return (
     <section
-  ref={ref}
-  className="relative h-[500px] overflow-hidden mb-0"
->
-      {/* Imagen de fondo parallax */}
-      <motion.div style={{ y }} className="absolute inset-0 z-0">
+      ref={ref}
+      className="relative h-[500px] overflow-hidden bg-white m-0 p-0"
+    >
+      {/* Fondo parallax */}
+      <motion.div style={{ y }} className="absolute inset-0 z-0 min-h-full">
         <img
           src="/parallax-brochas-banner.png"
           alt="Fondo brochas GOYA"
-          className="w-full h-full object-cover"
+          className="absolute top-0 w-full h-full object-cover"
         />
       </motion.div>
 
-      {/* Contenido centrado con capa oscura */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-white text-center px-6">
-        <div className="drop-shadow-lg">
+      {/* Contenido + capa oscura */}
+      <div className="relative z-10 flex items-center justify-center h-full bg-black/40 text-white text-center px-6">
+        <div>
           <h2 className="text-3xl md:text-5xl font-bold mb-2">
             Hecho para profesionales
           </h2>
