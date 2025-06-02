@@ -7,14 +7,12 @@ function ParallaxBanner2() {
     target: ref,
     offset: ["start end", "end start"],
   });
+
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
 
   return (
-    <section
-      ref={ref}
-      className="relative h-[500px] overflow-hidden bg-[#0e1b4d]"
-    >
-      {/* Imagen de fondo parallax */}
+    <section ref={ref} className="relative h-[60vh] overflow-hidden">
+      {/* Imagen de fondo con efecto parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <img
           src="/parallax-brochas-banner.png"
@@ -23,20 +21,17 @@ function ParallaxBanner2() {
         />
       </motion.div>
 
-      {/* Contenido sobre la imagen */}
-      <div className="relative z-10 flex items-center justify-center h-full bg-black/40 text-white text-center px-6">
-        <div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-2">
-            Hecho para profesionales
-          </h2>
-          <p className="text-md md:text-lg">
-            GOYA, tu herramienta de confianza
-          </p>
-        </div>
+      {/* Capa oscura + contenido centrado */}
+      <div className="absolute inset-0 z-10 bg-black/40 flex flex-col items-center justify-center text-white text-center px-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2">
+          Hecho para profesionales
+        </h2>
+        <p className="text-md md:text-lg">
+          GOYA, tu herramienta de confianza
+        </p>
       </div>
     </section>
   );
 }
 
 export default ParallaxBanner2;
-
