@@ -36,76 +36,67 @@ function App() {
 
           <div className="my-8 border-t border-gray-300"></div>
 
-          {/* Formulario con alerta */}
-          <form
-            action="https://formsubmit.co/donaldomerida40@gmail.com"
-            method="POST"
-            onSubmit={() =>
-              alert("¡Gracias por tu mensaje! Te responderemos pronto.")
-            }
-            className="space-y-4 text-left"
-          >
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="box" />
+         {/* Formulario con alerta */}
+        <form
+          action="https://formsubmit.co/donaldomerida40@gmail.com"
+          method="POST"
+          onSubmit={() =>
+            alert("¡Gracias por tu mensaje! Te responderemos pronto.")
+          }
+          className="space-y-4 text-left mt-8"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Gracias por contactarnos. Te responderemos pronto."
+          />
+        
+          <div>
+            <label htmlFor="nombre" className="block text-sm font-medium text-gray-700">
+              Nombre
+            </label>
             <input
-              type="hidden"
-              name="_autoresponse"
-              value="Gracias por contactarnos. Te responderemos pronto."
+              type="text"
+              id="nombre"
+              name="Nombre"
+              required
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
             />
-
-            <div>
-              <label htmlFor="nombre" className="block text-sm font-medium text-gray-700">
-                Nombre
-              </label>
-              <input
-                type="text"
-                id="nombre"
-                name="Nombre"
-                required
-                className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="correo" className="block text-sm font-medium text-gray-700">
-                Correo electrónico
-              </label>
-              <input
-                type="email"
-                id="correo"
-                name="Correo"
-                required
-                className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700">
-                Mensaje
-              </label>
-              <textarea
-                id="mensaje"
-                name="Mensaje"
-                rows="4"
-                required
-                className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition"
-            >
-              Enviar mensaje
-            </button>
-          </form>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
-  );
-}
-
-export default App;
+          </div>
+        
+          <div>
+            <label htmlFor="correo" className="block text-sm font-medium text-gray-700">
+              Correo electrónico
+            </label>
+            <input
+              type="email"
+              id="correo"
+              name="Correo"
+              required
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+        
+          <div>
+            <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700">
+              Mensaje
+            </label>
+            <textarea
+              id="mensaje"
+              name="Mensaje"
+              rows="4"
+              required
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            ></textarea>
+          </div>
+        
+          <button
+            type="submit"
+            className="bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition"
+          >
+            Enviar mensaje
+          </button>
+        </form>
 
