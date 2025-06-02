@@ -11,10 +11,10 @@ function ParallaxBanner2() {
 
   return (
     <section
-  ref={ref}
-  className="relative h-[500px] overflow-hidden bg-transparent"
->
-      {/* Fondo parallax */}
+      ref={ref}
+      className="relative h-[500px] overflow-hidden bg-[#0e1b4d]"
+    >
+      {/* Imagen de fondo parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <img
           src="/parallax-brochas-banner.png"
@@ -23,7 +23,7 @@ function ParallaxBanner2() {
         />
       </motion.div>
 
-      {/* Contenido + capa oscura */}
+      {/* Contenido sobre la imagen */}
       <div className="relative z-10 flex items-center justify-center h-full bg-black/40 text-white text-center px-6">
         <div>
           <h2 className="text-3xl md:text-5xl font-bold mb-2">
