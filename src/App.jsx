@@ -4,7 +4,7 @@ import Gallery from "./components/Gallery";
 import ParallaxBanner from "./components/ParallaxBanner";
 import ProductSlider from "./components/ProductSlider";
 import ParallaxBanner2 from "./components/ParallaxBanner2";
-import ContactModal from "./components/ContactModal.jsx";
+import ContactModal from "./components/ContactModal";
 import Footer from "./components/Footer";
 
 
