@@ -5,7 +5,6 @@ export default function ContactModal() {
 
   return (
     <>
-      {/* Botón flotante */}
       <button
         onClick={() => setOpen(true)}
         className="fixed bottom-6 right-6 bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-full shadow-lg z-50"
@@ -13,7 +12,6 @@ export default function ContactModal() {
         Contactar
       </button>
 
-      {/* Modal */}
       {open && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-xl w-[90%] max-w-md p-6 relative">
