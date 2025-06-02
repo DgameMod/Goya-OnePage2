@@ -17,7 +17,7 @@ function App() {
       <ParallaxBanner2 />
 
       {/* Sección de contacto */}
-      <section id="contacto" className="bg-white py-16 px-4">
+      <section id="contacto" className="bg-white pt-0 pb-16 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-blue-900 mb-4">Contáctanos</h2>
           <p className="text-gray-600 mb-6">
@@ -108,3 +108,4 @@ function App() {
 }
 
 export default App;
+
