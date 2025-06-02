@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle } from "lucide-react"; // Icono de chat profesional
+import { MessageCircle } from "lucide-react"; // Asegúrate de tener lucide-react instalado
 
 export default function ContactModal() {
   const [open, setOpen] = useState(false);
@@ -15,7 +15,6 @@ export default function ContactModal() {
         Chat
       </button>
 
-      {/* Modal */}
       {open && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg max-w-md w-full shadow-xl relative">
@@ -26,8 +25,9 @@ export default function ContactModal() {
               ✕
             </button>
             <h2 className="text-xl font-semibold mb-4">¿En qué podemos ayudarte?</h2>
-            <p className="text-sm text-gray-600">Puedes escribirnos por WhatsApp o completar el formulario de contacto.</p>
-            {/* Aquí puedes insertar el formulario o links */}
+            <p className="text-sm text-gray-600">
+              Puedes escribirnos por WhatsApp o completar el formulario de contacto.
+            </p>
           </div>
         </div>
       )}
