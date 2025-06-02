@@ -3,45 +3,50 @@ import React from "react";
 
 const products = [
   {
-    name: "Brocha GOYA Profesional",
+    title: "Brocha GOYA Profesional",
     image: "/slider1.png",
   },
   {
-    name: "Rodillo Antigota POLIMAX",
+    title: "Rodillo Antigota POLIMAX",
     image: "/slider2.png",
   },
   {
-    name: "Espátula drywall",
+    title: "Espátula drywall",
     image: "/slider3.png",
   },
   {
-    name: "Guantes industriales",
+    title: "Guantes industriales",
     image: "/slider4.png",
   },
 ];
 
 export default function ProductSlider() {
   return (
-    <section className="py-16 px-4 bg-white border-t border-gray-200">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-blue-900 text-center mb-10">
+    <section className="py-16 px-4 bg-white">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-2">
           Nuestros productos estrella
         </h2>
+        <p className="text-gray-500 mb-10">
+          Herramientas destacadas por su calidad y desempeño
+        </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
+              className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-48 object-contain mx-auto bg-white"
-              />
-              <div className="p-4 text-center">
-                <h3 className="text-md font-semibold text-blue-800">
-                  {product.name}
+              <div className="h-56 bg-gray-100 flex items-center justify-center">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="object-contain max-h-full"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-blue-900 font-semibold text-md">
+                  {product.title}
                 </h3>
               </div>
             </div>
