@@ -26,16 +26,16 @@ function ParallaxBanner2() {
   </motion.div>
 
   {/* Contenido + capa oscura */}
-  <div className="relative z-10 flex items-center justify-center min-h-[500px] bg-black/40 text-white text-center px-6">
-    <div>
-      <h2 className="text-3xl md:text-5xl font-bold mb-2">
-        Hecho para profesionales
-      </h2>
-      <p className="text-md md:text-lg">
-        GOYA, tu herramienta de confianza
-      </p>
-    </div>
+<div className="relative z-10 flex flex-col items-center justify-center min-h-[500px] bg-black/40 text-white text-center px-6">
+  <div className="drop-shadow-md">
+    <h2 className="text-3xl md:text-5xl font-bold mb-2">
+      Hecho para profesionales
+    </h2>
+    <p className="text-md md:text-lg">
+      GOYA, tu herramienta de confianza
+    </p>
   </div>
+</div>
 </section>
   );
 }
