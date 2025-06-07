@@ -1,24 +1,29 @@
+// Hero.jsx
+import React from "react";
+
 export default function Hero() {
   return (
     <section
-      className="relative h-screen flex flex-col items-center justify-center text-white text-center px-6 bg-cover bg-center"
-      style={{ backgroundImage: "url('/hero-fondo.png')" }}
+      className="relative bg-cover bg-center h-screen text-white flex items-center justify-center"
+      style={{ backgroundImage: "url('/hero-fondo1.jpg')" }}
     >
-      {/* Capa oscura superpuesta */}
-      <div className="absolute inset-0 bg-black/60 z-0"></div>
+      {/* Logo arriba a la izquierda */}
+      <div className="absolute top-6 left-6">
+        <img
+          src="/logo-goya.png" // Asegúrate de tener esta imagen en /public/logo-goya.png
+          alt="Logo Goya"
+          className="w-28 md:w-36"
+        />
+      </div>
 
-      {/* Contenido principal */}
-      <div className="relative z-10">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Calidad que transforma</h1>
-        <p className="text-lg md:text-2xl mb-6">
-          Brochas, rodillos y herramientas para profesionales
+      {/* Contenido centrado */}
+      <div className="bg-black/50 p-8 rounded-xl text-center max-w-2xl">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+          Calidad que transforma
+        </h1>
+        <p className="text-lg md:text-xl">
+          Brochas, rodillos y herramientas profesionales
         </p>
-        <a
-          href="#cotiza"
-          className="bg-blue-700 hover:bg-blue-800 text-white py-3 px-6 rounded-full font-semibold transition duration-300 shadow-lg"
-        >
-          Cotiza tu proyecto
-        </a>
       </div>
     </section>
   );
