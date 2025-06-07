@@ -7,17 +7,15 @@ export default function Hero() {
       className="relative bg-cover bg-center h-screen flex items-center justify-start"
       style={{ backgroundImage: "url('/hero-fondo1.jpg')" }}
     >
-      {/* Logo blanco más grande */}
-      <div className="absolute top-6 left-6">
+      {/* Contenedor de fondo oscuro y contenido */}
+      <div className="relative ml-6 md:ml-24 bg-black/30 p-10 pt-16 rounded-xl max-w-xl text-white">
+        {/* Logo blanco dentro del contenedor, encima del fondo */}
         <img
-          src="/logo-goya-blanco.png" // Este debe estar en /public
+          src="/logo-goya-blanco.png"
           alt="Logo Goya"
-          className="w-36 md:w-48" // Más grande
+          className="absolute top-4 left-4 w-24 md:w-28"
         />
-      </div>
 
-      {/* Contenido alineado a la izquierda con fondo translúcido */}
-      <div className="ml-6 md:ml-24 bg-black/30 p-8 rounded-xl max-w-xl text-white">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
           Calidad que transforma
         </h1>
