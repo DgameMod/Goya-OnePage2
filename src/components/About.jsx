@@ -24,15 +24,11 @@ function About() {
 
   return (
     <section className="relative bg-white py-16 px-4 text-blue-900" id="nosotros">
-      {/* Logo centrado arriba animado */}
-      <motion.img
+      {/* Logo al fondo arriba del título */}
+      <img
         src="/logo-goya.png"
         alt="Logo Goya"
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 0.1, scale: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 md:w-40 z-0 pointer-events-none select-none"
+        className="absolute top-[-40px] left-1/2 transform -translate-x-1/2 w-48 opacity-10 pointer-events-none"
       />
 
       <motion.div
@@ -40,9 +36,8 @@ function About() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="relative z-10"
       >
-        <div className="max-w-6xl mx-auto text-center mb-12">
+        <div className="max-w-6xl mx-auto text-center mb-12 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold">Nosotros</h2>
           <p className="mt-2 text-base md:text-lg">Conoce la esencia de GOYA</p>
         </div>
