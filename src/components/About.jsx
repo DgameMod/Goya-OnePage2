@@ -23,31 +23,26 @@ function About() {
   ];
 
   return (
-    <section className="bg-white py-16 px-4 text-blue-900" id="nosotros">
+    <section className="relative bg-white py-16 px-4 text-blue-900 overflow-hidden" id="nosotros">
+      {/* Logo decorativo al fondo, izquierda */}
+      <img
+        src="/logo-goya.png"
+        alt="Logo Goya"
+        className="absolute top-10 left-0 w-40 opacity-10 pointer-events-none select-none"
+      />
+
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 mb-12">
-          {/* Logo alineado a la izquierda */}
-          <div className="flex-shrink-0">
-            <img
-              src="/logo-goya.png"
-              alt="Logo Goya"
-              className="w-28 md:w-36 h-auto mx-auto md:mx-0"
-            />
-          </div>
-
-          {/* Encabezado y subtítulo */}
-          <div className="text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold">Nosotros</h2>
-            <p className="mt-2 text-base md:text-lg">Conoce la esencia de GOYA</p>
-          </div>
+        <div className="max-w-6xl mx-auto text-center mb-12 relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold">Nosotros</h2>
+          <p className="mt-2 text-base md:text-lg">Conoce la esencia de GOYA</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto relative z-10">
           {cards.map((card, index) => (
             <motion.div
               key={index}
