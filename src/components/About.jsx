@@ -23,13 +23,13 @@ function About() {
   ];
 
   return (
-    <section className="relative bg-white pt-32 pb-16 px-4 text-blue-900" id="nosotros">
-      {/* Fondo del logo corregido */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-0">
+    <section className="relative bg-white py-16 px-4 text-blue-900" id="nosotros">
+      {/* Logo decorativo */}
+      <div className="absolute top-[-40px] left-1/2 transform -translate-x-1/2">
         <img
           src="/logo-goya.png"
           alt="Logo Goya"
-          className="w-40"
+          className="w-32 sm:w-40"
         />
       </div>
 
@@ -39,12 +39,12 @@ function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="relative z-10 max-w-6xl mx-auto text-center mb-12">
+        <div className="max-w-6xl mx-auto text-center mb-12 pt-16">
           <h2 className="text-3xl md:text-4xl font-bold">Nosotros</h2>
           <p className="mt-2 text-base md:text-lg">Conoce la esencia de GOYA</p>
         </div>
 
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {cards.map((card, index) => (
             <motion.div
               key={index}
