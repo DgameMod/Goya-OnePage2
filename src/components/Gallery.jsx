@@ -14,7 +14,7 @@ function Gallery() {
     <section className="bg-white py-16 px-4 text-blue-900" id="galeria">
       <div className="max-w-6xl mx-auto text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold">Galería</h2>
-        <p className="mt-2 text-base md:text-lg">Conoce nuestros productos en acción</p>
+        <p className="mt-2 text-base md:text-lg">Conoce nuestros productos más vendidos</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
