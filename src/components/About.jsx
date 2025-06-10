@@ -23,13 +23,15 @@ function About() {
   ];
 
   return (
-    <section className="relative bg-white py-16 px-4 text-blue-900" id="nosotros">
-      {/* Logo al fondo arriba del título */}
-      <img
-        src="/logo-goya.png"
-        alt="Logo Goya"
-        className="absolute top-[-40px] left-1/2 transform -translate-x-1/2 w-48 opacity-10 pointer-events-none"
-      />
+    <section className="relative bg-white py-16 px-4 text-blue-900 overflow-hidden" id="nosotros">
+      {/* Logo solo para About */}
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-0">
+        <img
+          src="/logo-goya.png"
+          alt="Logo Goya"
+          className="w-48"
+        />
+      </div>
 
       <motion.div
         initial={{ opacity: 0, y: 60 }}
@@ -37,12 +39,12 @@ function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-6xl mx-auto text-center mb-12 relative z-10">
+        <div className="relative z-10 max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">Nosotros</h2>
           <p className="mt-2 text-base md:text-lg">Conoce la esencia de GOYA</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {cards.map((card, index) => (
             <motion.div
               key={index}
@@ -63,4 +65,3 @@ function About() {
 }
 
 export default About;
-
