@@ -24,11 +24,11 @@ function About() {
 
   return (
     <section className="relative bg-white py-16 px-4 text-blue-900 overflow-hidden" id="nosotros">
-      {/* Logo decorativo al fondo, izquierda */}
+      {/* Logo decorativo al fondo con margen desde la izquierda */}
       <img
         src="/logo-goya.png"
         alt="Logo Goya"
-        className="absolute top-10 left-0 w-40 opacity-10 pointer-events-none select-none"
+        className="absolute top-10 left-10 w-40 pointer-events-none select-none"
       />
 
       <motion.div
