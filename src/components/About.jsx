@@ -30,17 +30,20 @@ function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-6xl mx-auto text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-bold">Nosotros</h2>
-          <p className="mt-2 text-base md:text-lg">Conoce la esencia de GOYA</p>
-
-          {/* Logo GOYA */}
-          <div className="mt-4 mb-10">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 mb-12">
+          {/* Logo alineado a la izquierda */}
+          <div className="flex-shrink-0">
             <img
               src="/logo-goya.png"
               alt="Logo Goya"
-              className="mx-auto w-32 md:w-40 h-auto"
+              className="w-28 md:w-36 h-auto mx-auto md:mx-0"
             />
+          </div>
+
+          {/* Encabezado y subtítulo */}
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl font-bold">Nosotros</h2>
+            <p className="mt-2 text-base md:text-lg">Conoce la esencia de GOYA</p>
           </div>
         </div>
 
