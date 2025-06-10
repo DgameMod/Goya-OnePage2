@@ -23,13 +23,13 @@ function About() {
   ];
 
   return (
-    <section className="relative bg-white py-16 px-4 text-blue-900 overflow-hidden" id="nosotros">
-      {/* Logo de fondo solo para About */}
-      <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-0">
+    <section className="relative bg-white pt-32 pb-16 px-4 text-blue-900" id="nosotros">
+      {/* Fondo del logo corregido */}
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-0">
         <img
           src="/logo-goya.png"
           alt="Logo Goya"
-          className="w-40" // puedes ajustar el tamaño aquí
+          className="w-40"
         />
       </div>
 
@@ -65,3 +65,4 @@ function About() {
 }
 
 export default About;
+
