@@ -30,9 +30,18 @@ function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-6xl mx-auto text-center mb-12">
+        <div className="max-w-6xl mx-auto text-center mb-6">
           <h2 className="text-3xl md:text-4xl font-bold">Nosotros</h2>
           <p className="mt-2 text-base md:text-lg">Conoce la esencia de GOYA</p>
+
+          {/* Logo GOYA */}
+          <div className="mt-4 mb-10">
+            <img
+              src="/logo-goya.png"
+              alt="Logo Goya"
+              className="mx-auto w-32 md:w-40 h-auto"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
