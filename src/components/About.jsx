@@ -23,14 +23,11 @@ function About() {
   ];
 
   return (
-    <section className="relative bg-white py-16 px-4 text-blue-900" id="nosotros">
-      {/* Logo decorativo */}
-      <div className="absolute top-[-40px] left-1/2 transform -translate-x-1/2">
-        <img
-          src="/logo-goya.png"
-          alt="Logo Goya"
-          className="w-32 sm:w-40"
-        />
+    <section className="bg-white py-20 px-4 text-blue-900 relative overflow-hidden" id="nosotros">
+      
+      {/* Logo centrado arriba del texto */}
+      <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 z-10">
+        <img src="/logo-goya.png" alt="Logo Goya" className="w-32 md:w-40" />
       </div>
 
       <motion.div
@@ -39,7 +36,7 @@ function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-6xl mx-auto text-center mb-12 pt-16">
+        <div className="max-w-6xl mx-auto text-center mb-12 pt-28">
           <h2 className="text-3xl md:text-4xl font-bold">Nosotros</h2>
           <p className="mt-2 text-base md:text-lg">Conoce la esencia de GOYA</p>
         </div>
@@ -65,4 +62,3 @@ function About() {
 }
 
 export default About;
-
